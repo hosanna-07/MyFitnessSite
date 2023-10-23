@@ -1,0 +1,343 @@
+*{
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+
+  body {
+    background-color: black;
+    color: white;
+    padding-bottom: 10px;
+  }
+
+  .banner-parent {
+    text-align: center;
+    background-color: black;
+  }
+
+  .gym-img {
+    display: block;
+    height: 50%;
+    width: 60%; 
+}
+
+
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #000000;
+    font-size: 20px;
+    padding-right: 1%;
+
+  }
+  /* Toggle button */
+  
+  .navbar_toggle {
+    margin-left: 5%;
+    font-size: 30px;
+    color: #ffffff;
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    display: none;
+  }
+  
+  
+  .logo{
+    margin-left: 5%;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .logo_header{
+    display: flex;
+    margin-left: 2%;
+  }
+  
+  .main_nav{
+    display: flex;
+    width: 50%;
+    float: right;
+    margin-right: 1%;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+  }
+  .main_nav li:hover{
+    background-color: gray;
+  }
+  
+  .main_nav li{
+    display: inline;
+    color: #01dcde;
+  }
+  .main_nav li a{
+    color: #01dcde;
+  }
+
+  /*
+@media only screen and (max-width : 992px){
+    .web-content,.second-box-container,.hideme {
+        display: none;
+    }
+  
+    .navbar{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100vw;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      background-color: #000000;
+      font-size: 20px;
+    }
+  
+    .main_nav{
+      display: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .show_nav{
+      padding-top: 2%;
+      display: flex;
+      width: 100vw;
+      height: 150px;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  
+    .main_nav li{
+      width: 100%;
+      height: 30px;
+      font-size: 15px;
+      justify-content: center;
+      text-align: center;
+      padding: 0%;
+    }
+    .navbar_toggle {
+      margin-left: 5%;
+      margin-right: 3%;
+      font-size: 25px;
+      color: #ffffff;
+      background: transparent;
+      border-color: transparent;
+      transition: all 0.3s linear;
+      cursor: pointer;
+      display: block;
+    }
+    .logo_header{
+      width: 100%;
+      justify-content: space-between;
+      margin-right: 2%;
+    }
+    .logo {
+        font-size: 20px;
+        padding-top: 5px;
+    }
+
+    .gym-img {
+        height: 30%;
+        width: 100vw;
+    }
+
+  }
+  */
+
+  @media only screen and (min-width : 993px){
+    .navbar{
+        border-bottom: 2px solid #01dcde;
+    }
+
+    .web-content {
+        background-color: black;
+        margin-top: 2%;
+        font-size: 40px;
+        text-align: center;
+      }
+
+
+    .first-box-container {
+        display: flex;
+        flex-direction: row;
+        padding: 0 2% 0 2%;
+        gap: 2%;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .box1 {
+        background-color: #F9F54B;
+        height: fit-content;
+        width: 100%;
+        padding: 20px;
+        color: black;
+    }
+
+    .box2 {
+        background-color: #27D7D7;
+        height: fit-content;
+        width: 100%;
+        padding: 20px;
+        color: black;
+    }
+
+    .box3 {
+        background-color: #F9F54B;
+        height: fit-content;
+        width: 100%;
+        padding: 20px;
+        color: black;
+    }
+
+    .second-box-container {
+        margin-top: 2%;
+    }
+
+    .video-container iframe {
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 50%;
+      }
+      .video {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+      }
+    
+  }
+
+  .video-container {
+    margin-top: 10px;
+    position: relative;
+    padding-bottom: 3%;
+  }
+
+  hr {
+    width: 60%;
+  }
+  
+ .footer {
+    margin-top: 1%;
+    text-align: center;
+    font-size: 12px;
+ }
+
+ #OfficeAdd {
+    margin-top: 13px;
+    font-size: 13px;
+    color: gray;
+    line-height: 2em;
+    overflow: auto;
+ }
+
+ #Email-Text, #Phone-Number {
+    margin-top: 35px;
+    font-size: 13px;
+ }
+
+ #email-add, #phone {
+    margin-top: 10px;
+    font-size: 13px; 
+ }
+
+ .contact-us {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    position: relative;
+    margin: 0;
+ }
+
+ .about-us {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    position: relative;
+    margin-left: 10%;
+ }
+
+ .grid-container {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 2% 0 2% 0;
+    font-size: 20px;
+ }
+
+ textarea {
+    width: 95%;
+    height: 100px;
+    resize: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #000000;
+    color: gray;
+    border: 1px solid gray;
+  }
+
+  input {
+    width: 95%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #000000;
+    color: gray;
+    border: 1px solid gray;
+  }
+
+  form {
+    margin-top: 15px;
+  }
+
+  .submitBtn {
+    margin-top: 5px;
+    width: 100%;
+    height: 40px;
+    background-color: #01dcde;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+
+  .left-button, .right-button {
+    border: 2px solid #01dcde;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding: 3px;
+  }
+
+  .box-content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    padding: 0px 25% 0px 25%;
+  }
+
+
+  .float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#01dcde;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size: 50px;
+  }
+
+  .my-float{
+    margin-top: 5px;
+  }
