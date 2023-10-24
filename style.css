@@ -12,6 +12,7 @@
     background-color: black;
     color: white;
     padding-bottom: 10px;
+    scroll-behavior: smooth;
   }
 
   .banner-parent {
@@ -324,16 +325,23 @@
 
 
   .float{
-    position:fixed;
-    width:60px;
-    height:60px;
-    bottom:40px;
-    right:40px;
-    background-color:#01dcde;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    font-size: 50px;
+
+  --offset: 50px; 
+  
+  position: sticky;
+  bottom: 20px;      
+  margin-left:90%; 
+  place-self: end;
+  margin-top: calc(100vh + var(--offset));
+  
+  /* visual styling */
+  text-decoration: none;
+  padding: 10px;
+  font-family: sans-serif;
+  color: #fff;
+  background: #01dcde;
+  border-radius: 100px;
+  white-space: nowrap;
   }
 
   .my-float{
